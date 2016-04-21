@@ -10,6 +10,7 @@ file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
 
 ExternalProject_Add(dlib_src
   GIT_REPOSITORY git@github.com:dorian3d/DLib.git
+  GIT_TAG 330bdc10576f6bcb55e0bd85cd5296f39ba8811a
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CATKIN_DEVEL_PREFIX}
 )
 ExternalProject_CatkinInstall(dlib_src)
