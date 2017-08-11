@@ -13,7 +13,6 @@ ExternalProject_Add(dlib_src
   GIT_TAG 330bdc10576f6bcb55e0bd85cd5296f39ba8811a
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CATKIN_DEVEL_PREFIX}
 )
-ExternalProject_CatkinInstall(dlib_src)
 
 cs_add_library(${PROJECT_NAME} src/dependency_tracker.cc)
 add_dependencies(${PROJECT_NAME} dlib_src)
